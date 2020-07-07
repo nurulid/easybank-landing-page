@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./variable";
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: weight(light);
+}
