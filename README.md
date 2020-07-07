@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-[Frontend Mentor](https://www.frontendmentor.io)
+The design are from [Frontend Mentor](https://www.frontendmentor.io)
