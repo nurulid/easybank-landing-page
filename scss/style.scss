@@ -9,9 +9,9 @@
   @return map-get($font-size, $size-name);
 }
 
-html {
-  overflow: hidden;
-}
+// html {
+//   overflow: hidden;
+// }
 
 body {
   font-family: "Public Sans", sans-serif;
@@ -204,6 +204,7 @@ header {
     }
   }
   .box {
+    display: none;
     position: absolute;
     height: 100vh;
     // width: 100vw;

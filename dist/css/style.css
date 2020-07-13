@@ -8,10 +8,6 @@ button {
   cursor: pointer;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -175,6 +171,7 @@ header nav .nav-wrapper li a:hover, header nav .nav-wrapper li a.active {
 }
 
 header .box {
+  display: none;
   position: absolute;
   height: 100vh;
   top: 79px;
