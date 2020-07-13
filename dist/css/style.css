@@ -24,6 +24,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .btn-primary {
   color: #ffffff;
   padding: 14px 30px;
@@ -183,10 +189,21 @@ header .box {
 header .box .box-menu {
   background: #ffffff;
   width: 87%;
-  height: 300px;
+  height: auto;
   margin: 25px auto;
   border-radius: 8px;
   z-index: 9;
+  text-align: center;
+}
+
+header .box .box-menu .nav {
+  display: block;
+}
+
+header .box .box-menu .nav a {
+  display: block;
+  padding: 17px 0;
+  border: 0;
 }
 
 header .box .box-menu:after {

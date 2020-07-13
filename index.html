@@ -17,8 +17,8 @@
           <img src="./images/logo.svg" alt="Logo Easybank">
         </a>
       </div>
-      <div class="hamburger">
-        <img src="./images/icon-close.svg" alt="Icon Hamburger">
+      <div class="hamburger" onclick="toggleBurgerMenu()">
+        <img src="./images/icon-hamburger.svg" alt="Icon Hamburger">
       </div>
       <nav class="nav nav--horizontal">
         <ul class="nav-wrapper">
@@ -31,8 +31,18 @@
       </nav>
       <button class="btn-primary">Request Invite</button>
     </div>
-    <div class="box">
-      <div class="box-menu"></div>
+    <div class="box" onclick="toggleBurgerMenu()">
+      <div class="box-menu">
+        <nav class="nav nav--vertical">
+          <ul class="nav-wrapper">
+            <li class="nav__item"><a href="" class="active">Home</a></li>
+            <li class="nav__item"><a href="">About</a></li>
+            <li class="nav__item"><a href="">Contact</a></li>
+            <li class="nav__item"><a href="">Blog</a></li>
+            <li class="nav__item"><a href="">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -237,6 +247,24 @@
 
   <!-- script -->
   <script>
+    // hide show hamburger menu
+    let burgerMenu = document.querySelector(".hamburger");
+    let burgerIcon = document.querySelector(".hamburger img");
+    let burgerNav = document.querySelector(".box");
+    let html = document.querySelector("html");
+
+    function toggleBurgerMenu() {
+      if (burgerNav.style.display == "block") {
+        burgerIcon.src = "./images/icon-hamburger.svg";
+        burgerNav.style.display = 'none';
+        html.style.overflow = 'scroll';
+      } else {
+        burgerIcon.src = "./images/icon-close.svg";
+        burgerNav.style.display = 'block';
+        html.style.overflow = 'hidden';
+      }
+    }
+
     /*
      * Replace all SVG images with inline SVG
      */

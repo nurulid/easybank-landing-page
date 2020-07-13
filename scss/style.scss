@@ -108,6 +108,9 @@ body {
   max-width: 1440px;
   width: 80%;
   margin: 0 auto;
+  @include respond(small) {
+    width: 90%;
+  }
 }
 
 .btn-primary {
@@ -215,10 +218,19 @@ header {
     .box-menu {
       background: $white;
       width: 87%;
-      height: 300px;
+      height: auto;
       margin: 25px auto;
       border-radius: 8px;
       z-index: 9;
+      text-align: center;
+      .nav {
+        display: block;
+        a {
+          display: block;
+          padding: 17px 0;
+          border: 0;
+        }
+      }
       &:after {
         content: "";
         position: absolute;
